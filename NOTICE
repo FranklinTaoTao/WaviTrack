@@ -1,0 +1,28 @@
+WaviTrack
+
+This distribution includes a modified ESP32-DW3000 library derived from the
+Makerfabs ESP32 UWB DW3000 project:
+https://github.com/Makerfabs/Makerfabs-ESP32-UWB-DW3000
+
+The Makerfabs project credits NConcepts as the library developer; the included
+library metadata credits Yannick SILVA as author and maintainer. Source files
+also contain Decawave copyright notices. The upstream package metadata declares
+Apache-2.0. Existing copyright and attribution notices are retained.
+
+WaviTrack changes to the library include ESP32 SPI block transfers for CIR
+access, runtime SPI-clock selection, and ESP32 port, UART, and interrupt/mutex
+adaptations. The distributed library examples also have pin and SPI settings
+changed from the Makerfabs version. Board-specific WaviTrack sketches are in
+firmware/v2 and firmware/v3.
+
+The Seeed Studio XIAO Series KiCad library in
+hardware/v3/Seeed Studio XIAO Series Library is from Seeed Studio's
+OPL_Kicad_Library project:
+https://github.com/Seeed-Studio/OPL_Kicad_Library
+It is licensed under Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0). See the license note in that directory. Its XIAO ESP32-C6 SMD
+footprint is also copied unchanged to hardware/v3/WaviTrack.pretty. The copy
+in hardware/v3/Xiao.pretty has a renamed footprint and KiCad-format updates.
+
+Other third-party component models in hardware/v3 are not claimed as
+WaviTrack-authored material.
